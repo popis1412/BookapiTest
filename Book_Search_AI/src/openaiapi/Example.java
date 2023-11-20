@@ -16,7 +16,7 @@ public class Example {
     public static void main(String[] args) {
         // Set ChatGPT endpoint and API key
         String endpoint = "https://api.openai.com/v1/chat/completions";
-        String apiKey = "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";
+        String apiKey = "Your_API_Key";
         
         // Prompt user for input string
         try {

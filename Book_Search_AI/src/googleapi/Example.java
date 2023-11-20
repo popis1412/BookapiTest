@@ -27,7 +27,7 @@ public class Example {
     public static void searchAndPrintBookInfo(String keyword) throws Exception {
         try {
             // Google Books API 키
-            String apiKey = "AIzaSyCe5TjaCqJZUmhBjd2vz_1dryEFBozx74U";
+            String apiKey = "Your_API_Key";
 
             // API 요청 URL 생성
             String encodedSearchTerm = URLEncoder.encode(keyword, "UTF-8");

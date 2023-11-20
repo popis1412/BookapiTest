@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.search.bproject.SearchController">
+  <tabs>
+    <Tab text="챗봇">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="397.0" layoutY="82.0" mnemonicParsing="false" onAction="#processInput" text="검색" />
+                  <Label layoutX="161.0" layoutY="54.0" prefHeight="11.0" prefWidth="42.0" text="키워드:" />
+                  <Label layoutX="161.0" layoutY="86.0" prefHeight="11.0" prefWidth="42.0" text="언어:" />
+                  <Label layoutX="161.0" layoutY="119.0" prefHeight="11.0" prefWidth="42.0" text="난이도:" />
+                  <TextField fx:id="textField1" layoutX="203.0" layoutY="50.0" />
+                  <TextField fx:id="textField2" layoutX="203.0" layoutY="82.0" />
+                  <TextField fx:id="textField3" layoutX="203.0" layoutY="115.0" />
+                  <Label fx:id="message" layoutX="14.0" layoutY="161.0" prefHeight="199.0" prefWidth="566.0" />
+                  <RadioButton layoutX="382.0" layoutY="53.0" mnemonicParsing="false" text="이상" />
+                  <RadioButton layoutX="437.0" layoutY="53.0" mnemonicParsing="false" text="이하" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="검색">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
